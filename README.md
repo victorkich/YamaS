@@ -1,0 +1,2 @@
+# YamaS
+Yamabiko Robot Simulator
