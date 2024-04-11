@@ -1,0 +1,25 @@
+[Ll]ibrary/
+[Ll]ogs/
+[Tt]emp/
+[Oo]bj/
+[Bb]uild/
+[Bb]uilds/
+[Mm]emoryCaptures/
+*UnityPackageManager/
+*.csproj
+*.sln
+*.userprefs
+*.log
+UserSettings/
+
+# Arquivos de backup do editor do MonoDevelop (MonoDevelop-Unity 5.x)
+*.pidb.meta
+*.pdb.meta
+
+# Arquivos de backup do Visual Studio (Unity 2017.2 e posterior)
+*.csproj.meta
+*.sln.meta
+
+# Cache do VS Code
+.vscode/
+
