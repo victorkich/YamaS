@@ -1,0 +1,65 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!78 &1
+TagManager:
+  serializedVersion: 2
+  tags:
+  - robot
+  - wheel
+  - ball
+  - Wall
+  - robot2
+  - robot3
+  - robot4
+  - robot1
+  - final_target
+  - ground
+  - Object
+  - Robot
+  - Camera
+  - Blue
+  - Yellow
+  - Red
+  - Orange
+  - Purple
+  - Green
+  - Pink
+  - robot5
+  - robot6
+  layers:
+  - Default
+  - TransparentFX
+  - Ignore Raycast
+  - Object
+  - Water
+  - UI
+  - Wall
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  m_SortingLayers:
+  - name: Default
+    uniqueID: 0
+    locked: 0

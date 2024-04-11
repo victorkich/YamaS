@@ -1,0 +1,66 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!1 &8342809673321796262
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 7746140503885486864}
+  - component: {fileID: 6289661085659045235}
+  m_Layer: 0
+  m_Name: ProceduralRoom 1
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &7746140503885486864
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8342809673321796262}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: -1.3101892, y: 0.939, z: 0.9976392}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_RootOrder: 0
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &6289661085659045235
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8342809673321796262}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 046257244c730c979900629f9a5b6906, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  roomSize: {x: 7.46, y: 10}
+  wallMeshA: {fileID: -2432090755550338912, guid: 12de69414af1523cb8fc4851b1fb4230, type: 3}
+  wallMeshB: {fileID: -2432090755550338912, guid: 9be6cf223689c39189a492f9dbd9339b, type: 3}
+  wallMeshC: {fileID: -2432090755550338912, guid: d07cd7849d23467f0a4688851df9070f, type: 3}
+  pillarMesh: {fileID: -2432090755550338912, guid: 4752917b0921fd475b7212c9a68a12ce, type: 3}
+  floorTile: {fileID: -2432090755550338912, guid: 018ecd7cc7be6040995cd23ba1e03847, type: 3}
+  wallMaterial0: {fileID: 2100000, guid: 2aaecf1b22e72fae0a636611168771e4, type: 2}
+  wallMaterial1: {fileID: 2100000, guid: 2aaecf1b22e72fae0a636611168771e4, type: 2}
+  wallSize: {x: 4, y: 4, z: 1}
+  pillarSize: {x: 1, y: 1, z: 1}
+  tileSize: {x: 1, y: 0.3, z: 1}
+  objectPrefabs:
+  - {fileID: 919132149155446097, guid: e66cb5275239359c8b4d629edf68fbb1, type: 3}
+  - {fileID: 919132149155446097, guid: e28e53d98f303c34d9f3f601d2d55377, type: 3}
+  - {fileID: 919132149155446097, guid: 0014389bd248c987e9d0828854f54af8, type: 3}
+  - {fileID: 919132149155446097, guid: 7f93c3469a5b80129abc468628783424, type: 3}
+  - {fileID: 919132149155446097, guid: aa1361bdb0bfc0dd7be10e80ec0b1dc8, type: 3}
+  - {fileID: 919132149155446097, guid: bbac3700ca311794e9099e65d4d1527a, type: 3}
+  - {fileID: 919132149155446097, guid: 3704d11bb0739fc9fa4e124592926f92, type: 3}
+  - {fileID: 919132149155446097, guid: 33370d90d3b3a3019a94ece8d58e536b, type: 3}
