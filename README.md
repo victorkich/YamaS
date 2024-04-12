@@ -39,9 +39,9 @@ YamaS is an advanced simulation framework developed at the Intelligent Robot Lab
 ## Visual Demonstrations
 Here are some animated demonstrations of YamaS in action:
 <p float="left">
-  <img src="media/yamas_menu_demonstration.gif" width="33%" />
-  <img src="media/yamas_interaction.gif" width="33%" />
-  <img src="media/yamas_moving.gif" width="33%" />
+  <img src="media/yamas_menu_demonstration.gif" width="32%" />
+  <img src="media/yamas_interaction.gif" width="32%" />
+  <img src="media/yamas_moving.gif" width="32%" />
 </p>
 
 ## Examples
