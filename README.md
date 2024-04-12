@@ -36,6 +36,14 @@ YamaS is an advanced simulation framework developed at the Intelligent Robot Lab
 2. Configure the VR settings within Unity based on your headset model.
 3. Engage with the simulation through VR for a more immersive HRI experience.
 
+## Visual Demonstrations
+Here are some animated demonstrations of YamaS in action:
+<p float="left">
+  <img src="media/yamas_menu_demonstration.gif" width="33%" />
+  <img src="media/yamas_interaction.gif" width="33%" />
+  <img src="media/yamas_moving.gif" width="33%" />
+</p>
+
 ## Examples
 Check out the `examples` directory for sample projects and scripts to get started with common tasks and simulations in YamaS.
 
