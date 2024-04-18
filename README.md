@@ -20,6 +20,20 @@ YamaS is an advanced simulation framework developed at the Intelligent Robot Lab
 1. Clone the YamaS repository: `git clone https://github.com/victorkich/YamaS.git`
 2. Follow the setup instructions in the `INSTALL.md` file within the repository for detailed environment setup.
 
+## ROS Integration
+1. Ensure ROS is properly installed and set up on your system.
+2. **Modify the ROSConnection.cs file**: Navigate to `Packages/com.unity.robotics.ros-tcp-connector/Runtime/TcpConnector/` and open `ROSConnection.cs`. Add the following method to the `ROSConnection` class:
+   ```csharp
+   public bool IsPublisherRegistered(string topicName)
+   {
+       RosTopicState topicState;
+       if (m_Topics.TryGetValue(topicName, out topicState))
+       {
+           return topicState.IsPublisher;
+       }
+       return false;
+   }
+
 ## Usage
 ### Simulation Environment Setup
 1. Launch Unity3D and open the YamaS project.
@@ -35,6 +49,14 @@ YamaS is an advanced simulation framework developed at the Intelligent Robot Lab
 1. Connect your VR headset to your PC.
 2. Configure the VR settings within Unity based on your headset model.
 3. Engage with the simulation through VR for a more immersive HRI experience.
+
+## Visual Demonstrations
+Here are some animated demonstrations of YamaS in action:
+<p float="left">
+  <img src="media/yamas_interaction.gif" width="100%" />
+  <img src="media/yamas_menu_demonstration.gif" width="49.7%" />
+  <img src="media/yamas_moving.gif" width="49.7%" />
+</p>
 
 ## Examples
 Check out the `examples` directory for sample projects and scripts to get started with common tasks and simulations in YamaS.
