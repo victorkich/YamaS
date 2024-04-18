@@ -739,11 +739,11 @@ PlayerSettings:
   apiCompatibilityLevel: 6
   activeInputHandler: 0
   windowsGamepadBackendHint: 0
-  cloudProjectId: a3e83843-2bf2-4cfc-8caa-ba9784193671
+  cloudProjectId: d4984ab3-377d-4624-a74f-ba1027c7c78a
   framebufferDepthMemorylessMode: 0
   qualitySettingsNames: []
-  projectName: Yamabiko Simulator
-  organizationId: victorkich
+  projectName: YamaS
+  organizationId: jair_bottega
   cloudEnabled: 0
   legacyClampBlendShapeWeights: 0
   playerDataPath: 
