@@ -20,6 +20,12 @@ YamaS is an advanced simulation framework developed at the Intelligent Robot Lab
 1. Clone the YamaS repository: `git clone https://github.com/victorkich/YamaS.git`
 2. Follow the setup instructions in the `INSTALL.md` file within the repository for detailed environment setup.
 
+## Usage
+### Simulation Environment Setup
+1. Launch Unity3D and open the YamaS project.
+2. Configure your simulation parameters through the Unity Editor interface or by editing the `config.json` file.
+3. Start the simulation within Unity.
+
 ## ROS Integration
 1. Ensure ROS is properly installed and set up on your system.
 2. **Modify the ROSConnection.cs file**: Navigate to `Packages/com.unity.robotics.ros-tcp-connector/Runtime/TcpConnector/` and open `ROSConnection.cs`. Add the following method to the `ROSConnection` class:
@@ -34,16 +40,29 @@ YamaS is an advanced simulation framework developed at the Intelligent Robot Lab
        return false;
    }
 
-## Usage
-### Simulation Environment Setup
-1. Launch Unity3D and open the YamaS project.
-2. Configure your simulation parameters through the Unity Editor interface or by editing the `config.json` file.
-3. Start the simulation within Unity.
+### ROS 2 Integration via Docker
+To control the robots in the simulation using ROS 2, follow these steps to set up a Docker environment:
 
-### ROS Integration
-1. Ensure ROS is properly installed and set up on your system.
-2. Use the provided ROS packages in the `ros_integration` directory to connect your physical or simulated robots to the YamaS environment.
-3. Utilize ROS topics to control robots within the simulation and receive sensor data.
+1. **Install the Docker Container**:
+   Run the following command to pull the necessary Docker container:
+   ```bash
+   docker pull victorkich/ros2:multiagentsv2
+   ```
+
+2. **Start the Docker Container**:
+   To open the Docker container and prepare it for integration with the Unity simulator, execute:
+   ```bash
+   docker run -it -p 10000:10000 -p 5005:5005 victorkich/ros2:multiagents bash
+   ```
+
+3. **Connect to the Unity Simulator**:
+   Once inside the Docker container, initiate the connection to the Unity simulator by running:
+   ```bash
+   ros2 run ros_tcp_endpoint default_server_endpoint --ros-args -p ROS_IP:=0.0.0.0
+   ```
+
+4. **Custom ROS Nodes**:
+   You are free to modify the setup and create custom ROS nodes. Open a new terminal tab, re-enter the container if necessary, and execute your ROS nodes to control the robots within the simulation environment.
 
 ### Virtual Reality (VR)
 1. Connect your VR headset to your PC.
